@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  MyCard
+//  Learn by Doing
 //
-//  Created by Terry Dengis on 10/10/19.
-//  Copyright © 2019 Terry Dengis. All rights reserved.
+//  Created by Terry Dengis on 4/25/20.
+//  Copyright © 2020 Terry Dengis. All rights reserved.
 //
 
 import UIKit
@@ -62,9 +62,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
-
-struct SceneDelegate_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}
