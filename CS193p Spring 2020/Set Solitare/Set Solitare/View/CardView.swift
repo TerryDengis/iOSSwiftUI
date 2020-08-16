@@ -18,7 +18,7 @@ private let shadeSolid: Double = 1.0
 private let shadeEmpty: Double = 0.0
 private let cardOpacity: Double = 0.2
 
-struct CardView: View {
+struct CardView: View, Animatable {
     var card: SetGame.Card
     
     var body: some View {
@@ -112,8 +112,10 @@ struct CardView: View {
             RoundedRectangle(cornerRadius: cardCornerRadius)
                 .fill(Color.gray)
                 .opacity(cardOpacity)
+
             RoundedRectangle(cornerRadius: cardCornerRadius)
                 .stroke(lineWidth: cardBoderWidth)
+
             VStack {
                 ForEach (0..<card.number) { _ in
                     self.draw()
@@ -124,6 +126,7 @@ struct CardView: View {
         .foregroundColor(cardBorderColor)
         .padding(5)
         .aspectRatio(2/3, contentMode: .fit)
+        
     }
 }
 

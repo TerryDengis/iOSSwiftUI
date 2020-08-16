@@ -11,7 +11,6 @@ import Foundation
 struct SetGame {
     private (set) var deck: Array<Card>
     private (set) var cards: Array<Card>
-    private (set) var selectedIndices: Array<Int>
     
     struct Card: Identifiable {
         var id: UUID = UUID()
@@ -20,12 +19,13 @@ struct SetGame {
         var shading: Int
         var number: Int
         var isSelected: Bool = false
+        var isMatched: Bool = false
+
     }
     
     init () {
         deck = Array<Card> ()
         cards = Array<Card> ()
-        selectedIndices = Array<Int> ()
         
         for shape in 1...3 {
             for color in 1...3 {
@@ -37,12 +37,11 @@ struct SetGame {
             }
         }
         deck.shuffle()
-        deal()
     }
     
     mutating func choose(_ card: Card) {
         if let chosenIndex = cards.firstIndex(matching: card) {
-
+            
             cards[chosenIndex].isSelected = !cards[chosenIndex].isSelected
         }
     }

@@ -1,5 +1,5 @@
 //
-//  Grid.swift
+//  GridView.swift
 //  Memorize
 //
 //  Created by Terry Dengis on 8/7/20.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Grid<Item, ItemView>: View where Item: Identifiable, ItemView: View {
+struct GridView<Item, ItemView>: View where Item: Identifiable, ItemView: View {
     private var items: [Item]
     private var viewForItem: (Item) -> ItemView
     

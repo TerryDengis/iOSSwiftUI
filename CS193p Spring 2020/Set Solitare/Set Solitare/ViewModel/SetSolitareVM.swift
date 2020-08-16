@@ -13,10 +13,7 @@ class SetSolitareVM: ObservableObject {
     
     init () {
         setModel = SetGame()
-    }
-    
-    func newGame() {
-        setModel = SetGame()
+
     }
     
     // MARK: - Access to the model
@@ -32,5 +29,22 @@ class SetSolitareVM: ObservableObject {
     // MARK: - Intent(s)
     func choose(card: SetGame.Card) {
         setModel.choose(card)
+    }
+    
+    func newGame() {
+        setModel = SetGame()
+        deal()
+    }
+    
+    func deal() {
+        setModel.deal()
+    }
+    
+    func dealThree() {
+        setModel.dealThree()
+    }
+    
+    func isEmpty () -> Bool {
+        return setModel.deck.isEmpty
     }
 }
