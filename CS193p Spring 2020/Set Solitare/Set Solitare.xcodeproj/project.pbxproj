@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE35935C24E7264D006456C3 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35935B24E7264D006456C3 /* GridView.swift */; };
-		FE35935E24E72655006456C3 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35935D24E72655006456C3 /* GridLayout.swift */; };
-		FE35936024E74176006456C3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35935F24E74176006456C3 /* CardView.swift */; };
+		FE4FECC224EA1733000C76AC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4FECC124EA1733000C76AC /* CardView.swift */; };
+		FE64ABE724EA168800384884 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE64ABE524EA168800384884 /* GridLayout.swift */; };
+		FE64ABE824EA168800384884 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE64ABE624EA168800384884 /* GridView.swift */; };
 		FED1B5C224E6F5F0004100E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED1B5C124E6F5F0004100E2 /* AppDelegate.swift */; };
 		FED1B5C424E6F5F0004100E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED1B5C324E6F5F0004100E2 /* SceneDelegate.swift */; };
 		FED1B5C624E6F5F0004100E2 /* SetSolitareGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED1B5C524E6F5F0004100E2 /* SetSolitareGameView.swift */; };
@@ -22,9 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE35935B24E7264D006456C3 /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridView.swift; path = ../../../Memorize/Memorize/GridView.swift; sourceTree = "<group>"; };
-		FE35935D24E72655006456C3 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridLayout.swift; path = ../../../Memorize/Memorize/GridLayout.swift; sourceTree = "<group>"; };
-		FE35935F24E74176006456C3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FE4FECC124EA1733000C76AC /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FE64ABE524EA168800384884 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		FE64ABE624EA168800384884 /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		FED1B5BE24E6F5F0004100E2 /* Set Solitare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Set Solitare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED1B5C124E6F5F0004100E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FED1B5C324E6F5F0004100E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,10 +101,10 @@
 		FED1B5D624E6F650004100E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE4FECC124EA1733000C76AC /* CardView.swift */,
+				FE64ABE524EA168800384884 /* GridLayout.swift */,
+				FE64ABE624EA168800384884 /* GridView.swift */,
 				FED1B5C524E6F5F0004100E2 /* SetSolitareGameView.swift */,
-				FE35935F24E74176006456C3 /* CardView.swift */,
-				FE35935B24E7264D006456C3 /* GridView.swift */,
-				FE35935D24E72655006456C3 /* GridLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,14 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FED1B5DB24E6FEF1004100E2 /* Array+Identifiable.swift in Sources */,
-				FE35936024E74176006456C3 /* CardView.swift in Sources */,
+				FE4FECC224EA1733000C76AC /* CardView.swift in Sources */,
 				FED1B5C224E6F5F0004100E2 /* AppDelegate.swift in Sources */,
 				FED1B5D924E6F69A004100E2 /* SetGame.swift in Sources */,
 				FED1B5C424E6F5F0004100E2 /* SceneDelegate.swift in Sources */,
+				FE64ABE724EA168800384884 /* GridLayout.swift in Sources */,
 				FED1B5DD24E713CE004100E2 /* SetSolitareVM.swift in Sources */,
-				FE35935C24E7264D006456C3 /* GridView.swift in Sources */,
+				FE64ABE824EA168800384884 /* GridView.swift in Sources */,
 				FED1B5C624E6F5F0004100E2 /* SetSolitareGameView.swift in Sources */,
-				FE35935E24E72655006456C3 /* GridLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

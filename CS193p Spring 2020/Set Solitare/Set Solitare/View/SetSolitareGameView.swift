@@ -21,14 +21,28 @@ struct SetSolitareGameView: View {
                                 self.gameVM.choose(card: card)
                             }
                         }
+                        .gesture(
+                            DragGesture(minimumDistance: 10)
+                                .onEnded { _ in
+                                    if card.cardStatus == .mismatched {
+                                        withAnimation(.easeInOut(duration: 1.0)){
+                                            self.gameVM.resetMismatch ()
+                                        }
+                                    } else {
+                                        withAnimation(.easeInOut(duration: 1.0)){
+                                            self.gameVM.dealThree()
+                                        }
+                                    }
+                            }
+                        )
                     .transition(.offset(randomOffscreenPosition()))
                 }
                 
                 HStack {
-                    Text("Matched Sets: ")
+                    Text("Matched Sets: \(gameVM.matchedSets())")
                     Spacer()
                     Button ("Hint") {
-                        
+                        self.gameVM.hint()
                     }
                     Spacer()
                     Button ("Deal") {
@@ -46,7 +60,8 @@ struct SetSolitareGameView: View {
                 }
             }
             .navigationBarTitle("Set Solitare")
-            .navigationBarItems(leading: Text("Score : "), trailing: Button("New Game"){
+            .navigationBarItems(leading: Text("Score: \(gameVM.gameScore)"), trailing: Button("New Game"){
+                
                 withAnimation(.easeInOut(duration: 2.0)){
                     self.gameVM.newGame()
                 }
@@ -59,14 +74,13 @@ struct SetSolitareGameView: View {
 private func randomOffscreenPosition() -> CGSize {
     let angle = Double.random(in: 0..<(2 * Double.pi))
     let distance = max(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height) * CGFloat(2.0.squareRoot())
-    print (CGSize(width: distance * CGFloat(cos(angle)), height: distance * CGFloat(sin(angle))))
+    
     return CGSize(width: distance * CGFloat(cos(angle)), height: distance * CGFloat(sin(angle)))
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let game = SetSolitareVM()
-        //game.newGame()
         return SetSolitareGameView(gameVM: game)
     }
 }
