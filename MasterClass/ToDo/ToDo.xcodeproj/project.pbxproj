@@ -17,6 +17,7 @@
 		FE262040252E400900044389 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE26203F252E400900044389 /* Persistence.swift */; };
 		FE262043252E400900044389 /* ToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE262041252E400900044389 /* ToDo.xcdatamodeld */; };
 		FE26204D252E416E00044389 /* AddToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE26204C252E416E00044389 /* AddToDoView.swift */; };
+		FE46658E2533B79800EA1943 /* AnimatedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE46658D2533B79800EA1943 /* AnimatedButtonView.swift */; };
 		FEBE5BA825321EA200EC1D0C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE5BA725321EA200EC1D0C /* SettingsView.swift */; };
 		FEBE5BAB253224CC00EC1D0C /* FormRowStaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE5BAA253224CC00EC1D0C /* FormRowStaticView.swift */; };
 		FEBE5BAF25322D4E00EC1D0C /* FormRowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE5BAE25322D4E00EC1D0C /* FormRowLinkView.swift */; };
@@ -46,6 +47,7 @@
 		FE262042252E400900044389 /* ToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDo.xcdatamodel; sourceTree = "<group>"; };
 		FE262044252E400900044389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE26204C252E416E00044389 /* AddToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoView.swift; sourceTree = "<group>"; };
+		FE46658D2533B79800EA1943 /* AnimatedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButtonView.swift; sourceTree = "<group>"; };
 		FEBE5BA725321EA200EC1D0C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FEBE5BAA253224CC00EC1D0C /* FormRowStaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowStaticView.swift; sourceTree = "<group>"; };
 		FEBE5BAE25322D4E00EC1D0C /* FormRowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowLinkView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				FEBE5BA725321EA200EC1D0C /* SettingsView.swift */,
 				FEBE5BAA253224CC00EC1D0C /* FormRowStaticView.swift */,
 				FEBE5BAE25322D4E00EC1D0C /* FormRowLinkView.swift */,
+				FE46658D2533B79800EA1943 /* AnimatedButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEBE5BA825321EA200EC1D0C /* SettingsView.swift in Sources */,
+				FE46658E2533B79800EA1943 /* AnimatedButtonView.swift in Sources */,
 				FE262040252E400900044389 /* Persistence.swift in Sources */,
 				FEBE5BAF25322D4E00EC1D0C /* FormRowLinkView.swift in Sources */,
 				FE06E79925336E37000F7797 /* ThemeData.swift in Sources */,

@@ -20,11 +20,11 @@ struct EmptyListView: View {
     ]
     
     let tips: [String] = [
-        "Use you time wisely!",
-        "Slow and staedy wins the race!",
+        "Use your time wisely!",
+        "Slow and steady wins the race!",
         "Keep it short and simple!",
         "Do hard tasks first!",
-        "Reward yourself after yoy complete a task!",
+        "Reward yourself after you complete a task!",
         "Schedule tomorrow today!",
         "Organize tasks ahead of time!"
     ]

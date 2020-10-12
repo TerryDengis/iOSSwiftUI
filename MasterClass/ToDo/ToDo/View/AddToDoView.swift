@@ -21,7 +21,7 @@ struct AddToDoView: View {
     @ObservedObject var theme = ThemeSettings.shared
     let themes: [Theme] = themeData
     
-    let priorities = ["High", "Normal", "Low"]
+    let priorities = ["Urgent", "Normal", "Low"]
     
     // MARK: - Body
     var body: some View {

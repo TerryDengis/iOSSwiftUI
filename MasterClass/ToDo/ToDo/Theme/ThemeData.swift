@@ -10,5 +10,7 @@ import SwiftUI
 let themeData: [Theme] = [
     Theme(id: 0, themeName: "Pink", themeColor: Color.pink),
     Theme(id: 1, themeName: "Blue", themeColor: Color.blue),
-    Theme(id: 2, themeName: "Green", themeColor: Color.green)
+    Theme(id: 2, themeName: "Green", themeColor: Color.green),
+    Theme(id: 3, themeName: "Yellow", themeColor: Color.yellow),
+    Theme(id: 4, themeName: "Red", themeColor: Color.red)
 ]
