@@ -73,8 +73,7 @@ struct ContentView: View {
             .sheet (isPresented: $showingAddToDoView) {
                 AddToDoView().environment(\.managedObjectContext, viewContext)
             }
-            // TODO: - animation not working properly
-            .overlay(AnimatedButtonView(showView: $showingAddToDoView), alignment: .bottomTrailing)
+            .overlay(AnimatedButtonView(showView: $showingAddToDoView).padding(), alignment: .bottomTrailing)
 
         } // NavigationView
         .navigationViewStyle(StackNavigationViewStyle())
